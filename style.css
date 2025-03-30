@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./assets/fonts/bebas-neue/BebasNeue-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./assets/fonts/nunito/Nunito-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+.d-none{
+    display: none !important;
+}
+header,
+footer {
+  background-color: rgb(158, 160, 162);
+  display: flex;
+  justify-content: center;
+}
+.header_container,
+.main_container,
+.footer_container {
+  width: 1440px;
+}
+.header_container h1 {
+  margin-top: 20px 0;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+}
+.header_container p {
+  margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin: 35px 0;
+}
+.main_container {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main_container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.image_container {
+  position: relative;
+  border: solid 4px rgb(158, 160, 162);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.image {
+  width: 250px;
+  height: 250px;
+}
+.image_info {
+  position: absolute;
+  background: rgb(39 33 33 / 73%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  opacity: 0;
+  transition: all 0.15s ease;
+}
+.image_container:hover .image_info {
+  opacity: 1;
+}
+.image_info h2 {
+  font-size: 1.1rem;
+  color: white;
+}
+.footer_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 30px 0;
+  font-weight: 200;
+  font-size: 1rem;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 10;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+ 
+}
+.overlay .image_wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.overlay .main_image{
+    width: 900px;
+}
+.overlay .icon {
+  filter: invert(1);
+  cursor: pointer;
+}
+.overlay .close-icon{
+    position: absolute;
+    top:20px;
+    right:70px;
+}
+.overlay .close-icon img{
+ width: 20px;   
+}
+.overlay .count-info{
+    position: absolute;
+    top:20px;
+    left:70px;
+}
+
+
