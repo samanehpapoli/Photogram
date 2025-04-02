@@ -1,0 +1,48 @@
+@media (max-width: 1050px) {
+  .overlay .main_image {
+    width: 700px;
+  }
+}
+
+@media (max-width: 850px) {
+  .overlay .main_image {
+    width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .overlay .image_wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header_container h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay .main_image {
+    width: 350px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header_container h1 {
+    font-size: 1.9rem;
+  }
+
+  .header_container p {
+    font-size: 0.9rem;
+  }
+
+  .overlay .main_image {
+    width: 280px;
+  }
+}
+
+@media (max-width: 330px) {
+  .footer_container {
+    font-size: 0.9rem;
+  }
+}
